@@ -45,6 +45,6 @@ body {
   @apply bg-main text-foreground font-lato;
 }
 
-.sections {
-  @apply px-[5%] py-16 md:py-24 lg:py-26;
+.tag {
+  @apply inline-block py-1.5 px-6 border border-[#d1cec5] rounded-[20px] text-lg font-semibold text-text-light mb-4;
 }

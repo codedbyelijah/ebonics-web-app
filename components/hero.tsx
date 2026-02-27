@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 lg:px-10 grid grid-cols-1 lg:grid-cols-11 gap-8 ">
         {/* left content */}
         <div className="lg:col-span-5 flex flex-col justify-between gap-10 items-start pt-30 lg:pl-3">
-          <div className=" font-fredoka flex flex-col justify-center items-start space-y-3  ">
+          <div className=" font-fredoka flex flex-col justify-center items-start space-y-6  ">
             <h2 className="text-5xl md:text-6xl">
               Care at Home, <br /> Done Right
             </h2>
@@ -18,7 +18,7 @@ export default function Hero() {
               what matters.
             </p>
             {/* Button */}
-            <Button variant="hero">Free Consultation</Button>
+            <Button variant="brand">Free Consultation</Button>
           </div>
 
           {/* hero card */}
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
 
         {/* right image */}
-        <div className=" relative lg:col-span-6 h-80 md:h-100 lg:h-200 rounded-lg overflow-hidden ">
+        <div className=" relative lg:col-span-6 h-80 md:h-100 lg:h-200 rounded-3xl overflow-hidden ">
           <div className="absolute top-0 left-0 w-full h-full bg-black/25 "></div>
           <Image
             src="/img/ebonics-caregiver.png"
