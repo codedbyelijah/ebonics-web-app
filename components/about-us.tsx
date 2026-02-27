@@ -3,7 +3,7 @@ import Button from "./button";
 
 export default function AboutUs() {
   return (
-    <section className=" mt-15 lg:mt-20 py-10 border-t-2 border-gray-400">
+    <section className=" mt-15 lg:mt-20 py-10 ">
       <div className="container-wrapper grid grid-cols-1 lg:grid-cols-11 lg:gap-1 ">
         {/* left-content */}
         <div className="lg:col-span-5 lg:pl-20 relative flex flex-col items-start space-y-6 ">
