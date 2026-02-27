@@ -22,7 +22,7 @@ export default function Process() {
 
   return (
     <section className="py-10">
-      <div className="container-wrapper border-b-2 border-gray-400">
+      <div className="container-wrapper border-b-4 border-gray-200">
         <div className="text-center mb-10">
           <span className="tag">Our Process</span>
           <h2 className="text-3xl md:text-5xl font-medium font-fredoka  mt-2">

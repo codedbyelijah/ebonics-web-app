@@ -45,8 +45,8 @@ export default function Service() {
               <Image
                 src="/img/ebonics-caregiver-2.jpg"
                 alt="Caregiver with elderly man"
-                width={500}
-                height={500}
+                width={200}
+                height={200}
                 className="w-full h-full object-cover lg:object-bottom"
               />
             </div>
