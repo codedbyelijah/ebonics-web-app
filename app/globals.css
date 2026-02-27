@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: #0a2a66;
+  --secondary-color: #f2b800;
+  --light-color: #efeded;
+  --bg-main: #f5f4f0;
+  --bg-white: #ffffff;
+  --text-main: #1c1c1c;
+  --text-light: #5a5a5a;
+  --brand-dark: #3e2632; /* Deep Burgundy/Purple */
+  --brand-peach: #eacfb9; /* Light Peach Accent */
+  --border-color: #e5e3db;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
+  --color-main: var(--bg-main);
+  --color-light: var(--light-color);
+  --color-text-main: var(--text-main);
+  --color-text-light: var(--text-light);
+  --color-dark: var(--brand-dark);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-lato: var(--font-lato);
+  --font-oswald: var(--font-oswald);
+  --font-fredoka: var(--font-fredoka);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply bg-main text-foreground font-lato;
+}
+
+.sections {
+  @apply px-[5%] py-16 md:py-24 lg:py-26;
+}
