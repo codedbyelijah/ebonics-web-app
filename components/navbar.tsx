@@ -1,12 +1,24 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Button from "./button";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Disable body scroll when mobile menu is open
   useEffect(() => {
@@ -52,7 +64,13 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full py-2 z-99 border-b border-secondary lg:border-none lg:py-4 ">
+    <header
+      className={`fixed top-0 left-0 w-full py-1 z-99 transition-all duration-300  ${
+        isScrolled
+          ? "bg-white/10 backdrop-blur-md border-b border-secondary"
+          : "border border-secondary lg:border-none lg:py-4 "
+      }`}
+    >
       <div className="container mx-auto px-4 lg:px-10 flex justify-between items-center ">
         {/* Logo */}
         <div className="flex items-center space-x-.5 text">
@@ -90,12 +108,7 @@ export default function Navbar() {
             </div>
 
             {/* Button */}
-            <button className="inline-flex items-center text-text-main bg-white p-1.5 pl-6 font-medium text-[.95rem] cursor-pointer border-none transition-all duration-300 rounded-[50px] hover:bg-[#2a1921] hover:text-white group ">
-              <span>Let's Connect</span>
-              <span className="bg-primary text-white w-9 h-9 flex items-center justify-center ml-4 font-[1.2rem] rounded-[50%] group-hover:bg-white group-hover:text-primary ">
-                <ArrowUpRight size={22} />
-              </span>
-            </button>
+            <Button variant="navbar">Let's Connect</Button>
           </div>
         </div>
 
@@ -137,12 +150,9 @@ export default function Navbar() {
                 </div>
 
                 {/* Button */}
-                <button className="w-[90%] inline-flex items-center justify-center  p-1.5 pl-6  font-medium text-[.95rem] cursor-pointer border-none transition-all duration-300 rounded-[50px] bg-[#2a1921] text-white  ">
-                  <span>Let's Connect</span>
-                  <span className="w-9 h-9 flex items-center justify-center ml-4 font-[1.2rem] rounded-[50%] bg-white text-primary ">
-                    <ArrowUpRight size={22} />
-                  </span>
-                </button>
+                <Button variant="navbar" className="w-[90%] justify-center">
+                  Let's Connect
+                </Button>
               </div>
             </div>
           </div>

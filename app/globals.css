@@ -25,6 +25,8 @@
   --color-text-main: var(--text-main);
   --color-text-light: var(--text-light);
   --color-dark: var(--brand-dark);
+  --color-peach: var(--brand-peach);
+  --color-border-color: var(--border-color);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-lato: var(--font-lato);

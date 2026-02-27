@@ -1,9 +1,10 @@
-import { ArrowUpRight, QuoteIcon } from "lucide-react";
+import { QuoteIcon } from "lucide-react";
 import Image from "next/image";
+import Button from "./button";
 
 export default function Hero() {
   return (
-    <main className="h-auto w-full py-4 ">
+    <main className="h-auto w-full py-4 mb-10 ">
       <div className="container mx-auto px-4 lg:px-10 grid grid-cols-1 lg:grid-cols-11 gap-8 ">
         {/* left content */}
         <div className="lg:col-span-5 flex flex-col justify-between gap-10 items-start pt-30 lg:pl-3">
@@ -17,12 +18,7 @@ export default function Hero() {
               what matters.
             </p>
             {/* Button */}
-            <button className="inline-flex items-center text-white bg-secondary mt-2 p-1.5 pl-6 font-medium text-[.95rem] cursor-pointer border-none transition-all duration-300 rounded-[50px] hover:bg-[#2a1921] hover:text-white group ">
-              <span>Free Consultation</span>
-              <span className="bg-white text-primary w-9 h-9 flex items-center justify-center ml-4 font-[1.2rem] rounded-[50%] group-hover:bg-white group-hover:text-primary ">
-                <ArrowUpRight size={22} />
-              </span>
-            </button>
+            <Button variant="hero">Free Consultation</Button>
           </div>
 
           {/* hero card */}
