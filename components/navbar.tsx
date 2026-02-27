@@ -93,7 +93,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-white hover:text-primary transition-colors duration-300 px-2 py-1"
+                className={`  hover:text-primary transition-colors duration-300 px-2 py-1 ${isScrolled ? "text-black" : "text-white"} `}
               >
                 {link.name}
               </Link>
@@ -102,7 +102,9 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-2 pr-12 ">
             {/* Contact Info */}
-            <div className="flex items-start justify-center  flex-col -space-y-1 text-[#eee] font-oswald ">
+            <div
+              className={`flex items-start justify-center  flex-col -space-y-1  font-oswald ${isScrolled ? "text-gray-900" : "text-[#eee]"} `}
+            >
               <p className="">Call us anytime</p>
               <p className="">(+234) 9039746329</p>
             </div>

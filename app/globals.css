@@ -46,5 +46,9 @@ body {
 }
 
 .tag {
-  @apply inline-block py-1.5 px-6 border border-[#d1cec5] rounded-[20px] text-lg font-semibold text-text-light mb-4;
+  @apply inline-block py-1.5 px-6 border border-[#d1cec5] rounded-[20px]  font-semibold text-text-light;
+}
+
+.container-wrapper {
+  @apply container mx-auto px-4 py-5 gap-10 lg:py-10 lg:px-10;
 }

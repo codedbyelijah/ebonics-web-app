@@ -1,10 +1,11 @@
-import { AboutUs, Hero } from "@/components";
+import { AboutUs, Hero, Service } from "@/components";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <AboutUs />
+      <Service />
     </>
   );
 }
