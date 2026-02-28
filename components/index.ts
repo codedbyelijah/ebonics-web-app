@@ -4,3 +4,5 @@ export { default as AboutUs } from "./about-us";
 export { default as Service } from "./service";
 export { default as Process } from "./process";
 export { default as Testimonial } from "./testimonial";
+export { default as CTABanner } from "./cta";
+export { default as Footer } from "./footer";

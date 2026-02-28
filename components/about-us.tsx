@@ -13,7 +13,7 @@ export default function AboutUs() {
             <div className="flex">
               {[1, 2, 3, 4].map((ava) => (
                 <div
-                  className={` lg:w-14 h-14 rounded-[50%] ${ava > 1 ? "-ml-4" : "ml-0"}`}
+                  className={` lg:w-14 h-14 rounded-[50%] ${ava > 1 ? "-ml-6" : "ml-0"}`}
                   key={ava}
                 >
                   <Image

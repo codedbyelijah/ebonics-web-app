@@ -1,4 +1,11 @@
-import { AboutUs, Hero, Process, Service, Testimonial } from "@/components";
+import {
+  AboutUs,
+  CTABanner,
+  Hero,
+  Process,
+  Service,
+  Testimonial,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +15,7 @@ export default function Home() {
       <Service />
       <Process />
       <Testimonial />
+      <CTABanner />
     </>
   );
 }
