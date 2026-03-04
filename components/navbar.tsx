@@ -4,12 +4,15 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Button from "./button";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
+  const isHome = pathname === "/";
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -66,14 +69,15 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full py-2 z-99 transition-all duration-300  ${
-        isScrolled
+        isScrolled || !isHome
           ? "bg-white/10 backdrop-blur-md border-b border-secondary lg:py-1 "
           : "border border-secondary lg:border-none lg:py-4 "
       }`}
     >
       <div className="container mx-auto px-4 lg:px-10 flex justify-between items-center ">
         {/* Logo */}
-        <div className="flex items-center space-x-.5 text">
+
+        <Link href="/" className="flex items-center space-x-.5 text">
           <div className="w-18 h-18 ">
             <Image
               src="/img/ebonics-logo.png"
@@ -84,7 +88,7 @@ export default function Navbar() {
             />
           </div>
           <p className="font-bold text-primary text-2xl ">EBONICS</p>
-        </div>
+        </Link>
 
         <div className="hidden  lg:flex items-center space-x-4 ">
           {/* navLinks */}
@@ -93,7 +97,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`  hover:text-primary transition-colors duration-300 px-2 py-1 ${isScrolled ? "text-black" : "text-white"} `}
+                className={`  hover:text-primary transition-colors duration-300 px-2 py-1 ${isScrolled || !isHome ? "text-black" : "text-white"} `}
               >
                 {link.name}
               </Link>
@@ -103,7 +107,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-2 pr-12 ">
             {/* Contact Info */}
             <div
-              className={`flex items-start justify-center  flex-col -space-y-1  font-oswald ${isScrolled ? "text-gray-900" : "text-[#eee]"} `}
+              className={`flex items-start justify-center  flex-col -space-y-1  font-oswald ${isScrolled || !isHome ? "text-gray-900" : "text-[#eee]"} `}
             >
               <p className="">Call us anytime</p>
               <p className="">(+234) 9039746329</p>

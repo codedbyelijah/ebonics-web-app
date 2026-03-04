@@ -4,7 +4,7 @@ import Button from "./button";
 
 export default function Hero() {
   return (
-    <main className="h-auto w-full py-4 mb-10 ">
+    <main className="h-auto w-full pt-1 pb-4 mb-10 ">
       <div className="container mx-auto px-4 lg:px-10 grid grid-cols-1 lg:grid-cols-11 gap-8 ">
         {/* left content */}
         <div className="lg:col-span-5 flex flex-col justify-between gap-10 items-start pt-30 lg:pl-3">

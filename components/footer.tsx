@@ -80,7 +80,7 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-white  rounded-xl">
-        <div className="container-wrapper border-t-4 border-border-color pt-20 pb-8 ">
+        <div className="container-wrapper pt-20 pb-8 ">
           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 mb-16 ">
             <div className="flex flex-col items-start justify-start gap-3">
               <div className="w-25 h-25 ">
