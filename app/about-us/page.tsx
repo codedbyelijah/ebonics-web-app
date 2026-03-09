@@ -1,4 +1,4 @@
-import { CTABanner } from "@/components";
+import { CTABanner, Testimonial } from "@/components";
 import Hero from "./hero";
 import About from "./about";
 import Values from "./values";
@@ -13,6 +13,7 @@ export default function Services() {
       <Values />
       <WhyChooseUs />
       <Statistics />
+      <Testimonial />
       <CTABanner />
     </>
   );

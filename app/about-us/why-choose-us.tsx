@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-10">
           <span className="tag">Why Choose Us</span>
           <h2 className="text-3xl md:text-5xl font-medium font-fredoka mt-2">
-            The Bliss Caregivers Difference
+            The Ebonics Caregivers Difference
           </h2>
           <p className="text-lg text-text-light max-w-3xl mx-auto mt-4">
             Choosing The Bliss Caregivers means opting for a team that truly
