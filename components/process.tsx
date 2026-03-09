@@ -48,7 +48,7 @@ export default function Process() {
                   <h3 className="text-xl font-bold text-gray-900">
                     {step.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-gray-600 max-w-xs">
+                  <p className="text-lg leading-relaxed text-gray-600 max-w-xs">
                     {step.description}
                   </p>
                 </div>

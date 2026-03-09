@@ -12,7 +12,7 @@ export default function Hero() {
             <h2 className="text-5xl md:text-6xl">
               Care at Home, <br /> Done Right
             </h2>
-            <p className="text-sm md:text-md w-full md:w-125 text-gray-500">
+            <p className=" md:text-md w-full md:w-125 text-gray-500 text-lg">
               Ebonics HomeCare Services brings trained, compassionate caregivers
               to your loved ones. We handle the details so families can focus on
               what matters.
@@ -46,7 +46,7 @@ export default function Hero() {
             {/* quote card */}
             <div className=" bg-white p-6 rounded-md shadow-sm  flex-1">
               <QuoteIcon className="text-secondary mb-2" size={22} />
-              <p>
+              <p className="text-lg">
                 The care felt personal, not rushed. Our caregiver treated my
                 father with real kindness and respect.
               </p>

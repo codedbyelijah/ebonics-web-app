@@ -36,7 +36,7 @@ export default function Testimonial() {
               className="bg-white p-8 rounded-md border border-border-color flex flex-col justify-between items-start "
               key={i}
             >
-              <p className="text-text-light text-[1rem] mb-8 ">
+              <p className="text-text-light text-[1rem] mb-8 text-lg">
                 "{item.content}"
               </p>
               <div className="flex items-center gap-3">

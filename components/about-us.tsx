@@ -26,7 +26,7 @@ export default function AboutUs() {
                 </div>
               ))}
             </div>
-            <p className="text-md font-semibold font-fredoka text-text-main  ">
+            <p className="text-md font-semibold font-fredoka text-text-main text-lg  ">
               Over 2,000 Satisfied
               <br />
               Families and Growing
@@ -51,7 +51,7 @@ export default function AboutUs() {
             Every care plan is designed with compassion and reliability,
             ensuring seniors receive support.
           </h2>
-          <p className="text-text-light text-md mb-8 ">
+          <p className="text-text-light text-md mb-8 text-lg ">
             Our elderly care services are built on trust, compassion, and
             professional responsibility. We focus on creating a calm, supportive
             care experience that adapts to changing needs and honors each

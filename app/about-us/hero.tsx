@@ -1,5 +1,4 @@
 import Button from "@/components/button";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -12,12 +11,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/70 -z-10" />
 
       <div className="relative container-wrapper h-full flex flex-col ">
-        <div className="flex flex-col justify-center items-center  gap-5 pt-30 mb-10">
+        <div className="flex flex-col justify-center items-center  gap-5 pt-30 mb-10 lg:pt-40 ">
           <h1 className="  text-5xl text-center  lg:text-6xl font-bold text-white ">
             Compassionate Care, <br /> Trusted Support
           </h1>
 
-          <p className="text-white w-full lg:w-2xl text-center ">
+          <p className="text-white w-full text-lg lg:w-2xl text-center ">
             We provide personalized care services tailored to your needs. Our
             team of experienced caregivers is dedicated to providing you with
             the highest quality of care.

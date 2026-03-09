@@ -4,15 +4,12 @@ import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import Button from "./button";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
 
-  const isHome = pathname === "/";
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -87,7 +84,7 @@ export default function Navbar() {
               className="w-full h-full object-fill"
             />
           </div>
-          <p className="font-bold text-primary text-2xl ">EBONICS</p>
+          <p className="font-bold text-primary text-xl">EBONICS</p>
         </Link>
 
         <div className="hidden  lg:flex items-center space-x-4 ">
@@ -109,8 +106,8 @@ export default function Navbar() {
             <div
               className={`flex items-start justify-center  flex-col -space-y-1  font-oswald ${isScrolled ? "text-gray-900" : "text-[#eee]"} `}
             >
-              <p className="">Call us anytime</p>
-              <p className="">(+234) 9039746329</p>
+              <p className="text-lg">Call us anytime</p>
+              <p className="text-lg">(+234) 9039746329</p>
             </div>
 
             {/* Button */}
@@ -151,8 +148,8 @@ export default function Navbar() {
               {/* Mobile Contact Info */}
               <div className="w-full flex flex-col items-center space-y-3 pt-4 border-t border-gray-200  ">
                 <div className="font-oswald flex flex-col items-center space-y-0.5 px-2">
-                  <p className="text-gray-400 text-sm">Call us anytime</p>
-                  <p className="text-black">(+234) 9039746329</p>
+                  <p className="text-gray-400 text-sm ">Call us anytime</p>
+                  <p className="text-black text-lg">(+234) 9039746329</p>
                 </div>
 
                 {/* Button */}

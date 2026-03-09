@@ -12,7 +12,7 @@ export default function CTA() {
           <h1 className="mb-5 block text-3xl font-fredoka md:mb-6 ">
             Let's talk about care
           </h1>
-          <p className="md:text-md">
+          <p className="md:text-md text-lg">
             We listen to you situation and build a care plan that fits your
             family's needs and budget.
           </p>

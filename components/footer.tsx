@@ -147,7 +147,7 @@ export default function Footer() {
           </div>
 
           <div className="flex justify-center items-center pt-8 border-t-4 border-border-color text-text-light text-[.85rem] ">
-            <p className="text-center">
+            <p className="text-center text-lg">
               © Copyright 2026 | Ebonics Homecare Services LTD | All Right
               Reserved{" "}
             </p>
