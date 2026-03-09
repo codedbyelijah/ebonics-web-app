@@ -21,7 +21,7 @@ export default function Testimonial() {
     },
   ];
   return (
-    <section className="">
+    <section className="pb-10">
       <div className="container-wrapper">
         <div className="text-center mb-10">
           <span className="tag">Testimonials</span>
