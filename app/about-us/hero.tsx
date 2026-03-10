@@ -22,8 +22,12 @@ export default function Hero() {
           </p>
 
           <div className=" flex justify-center  items-center gap-3 flex-wrap ">
-            <Button variant="navbar">Free Consultation</Button>
-            <Button variant="brand">Join Our Team</Button>
+            <Button variant="navbar" path="/contact">
+              Free Consultation
+            </Button>
+            <Button variant="brand" path="/career">
+              Join Our Team
+            </Button>
           </div>
         </div>
       </div>

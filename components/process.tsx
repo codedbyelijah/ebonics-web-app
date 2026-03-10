@@ -1,25 +1,6 @@
-export default function Process() {
-  const processSteps = [
-    {
-      number: "01",
-      title: "Free Consultation",
-      description:
-        "We start by understanding your loved one’s unique needs, daily routines, and medical requirements in a no-obligation meeting.",
-    },
-    {
-      number: "02",
-      title: "Custom Care Plan",
-      description:
-        "Our experts design a personalized care plan tailored specifically for safety, comfort, and maintaining independence.",
-    },
-    {
-      number: "03",
-      title: "Match & Support",
-      description:
-        "We pair you with a compassionate, vetted caregiver and provide ongoing support to ensure the highest quality of care.",
-    },
-  ];
+import { processSteps } from "@/libs";
 
+export default function Process() {
   return (
     <section className="py-10">
       <div className="container-wrapper border-b-4 border-gray-200">

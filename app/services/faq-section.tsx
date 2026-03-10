@@ -3,39 +3,7 @@
 
 import { useState } from "react";
 import Button from "@/components/button";
-
-const faqs = [
-  {
-    question: "What types of care services do you offer?",
-    answer:
-      "We offer comprehensive care services including personal care, companionship, elderly care, post-hospital care, nursing support, childcare, hospital escort, housekeeping, postpartum care, specialized abilities care, and driver services.",
-  },
-  {
-    question: "How do I know which care service is right for my family?",
-    answer:
-      "We start with a free consultation to understand your specific needs, daily routines, and health requirements. Our experts then recommend the most suitable care plan tailored to your situation.",
-  },
-  {
-    question: "Are your caregivers trained and certified?",
-    answer:
-      "Yes, all our caregivers undergo rigorous training, background checks, and certification processes. They are experienced professionals dedicated to providing compassionate, reliable care.",
-  },
-  {
-    question: "Can care services be customized to our schedule?",
-    answer:
-      "Absolutely! We create flexible care plans that adapt to your schedule, whether you need 24/7 support, part-time care, or occasional assistance. Your routine determines our service timing.",
-  },
-  {
-    question: "What areas do you serve?",
-    answer:
-      "We provide care services throughout the local metropolitan area. Contact us to confirm availability in your specific location, as we're continuously expanding our service areas.",
-  },
-  {
-    question: "How do you ensure quality and consistency?",
-    answer:
-      "We maintain high standards through regular caregiver training, client feedback systems, and quality assurance checks. Each care plan includes ongoing supervision and support coordination.",
-  },
-];
+import { servicesFAQs } from "@/libs";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -63,7 +31,7 @@ export default function FAQSection() {
 
         {/* FAQ Items */}
         <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
+          {servicesFAQs.map((faq, index) => (
             <div
               key={index}
               className="border border-[#e5e3db] rounded-xl overflow-hidden"

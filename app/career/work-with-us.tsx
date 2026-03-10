@@ -1,26 +1,7 @@
-import { Briefcase, ChevronRight, Clock, MoveRight, Users } from "lucide-react";
+import { ChevronRight, MoveRight } from "lucide-react";
+import { workWithUsCards } from "@/libs";
 
 export default function WorkWithUs() {
-  const cards = [
-    {
-      icon: Briefcase,
-      title: "Competitive compensation",
-      desc: "We pay fairly for the meaningful work you do every day",
-      button: "Learn",
-      large: true,
-    },
-    {
-      icon: Clock,
-      title: "Schedules built around your life",
-      desc: "Choose shifts that fit your needs and commitments",
-    },
-    {
-      icon: Users,
-      title: "A team that has your back",
-      desc: "Support, training, and respect from colleagues who care",
-    },
-  ];
-
   return (
     <section className="py-10">
       <div className="container-wrapper">
@@ -35,7 +16,7 @@ export default function WorkWithUs() {
 
         {/* Cards */}
         <div className="grid gap-6 md:grid-cols-2 lg:px-20 lg:grid-cols-4 cursor-pointer ">
-          {cards.map((card, index) => {
+          {workWithUsCards.map((card, index) => {
             const Icon = card.icon;
             return (
               <div

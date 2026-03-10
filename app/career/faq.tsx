@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import { careerFAQs } from "@/libs";
 
 export default function CareerFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -9,39 +10,6 @@ export default function CareerFAQ() {
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-
-  const faqs = [
-    {
-      question: "What qualifications do I need to become a caregiver?",
-      answer:
-        "We look for compassionate individuals with experience in caregiving. While formal certifications are valued, we also provide comprehensive training to qualified candidates. Most importantly, we seek people with genuine passion for helping others.",
-    },
-    {
-      question: "What kind of training do you provide?",
-      answer:
-        "We offer extensive on-the-job training, professional development workshops, and continuing education opportunities. Our training covers everything from specialized care techniques to communication skills and emergency response protocols.",
-    },
-    {
-      question: "How flexible are the work schedules?",
-      answer:
-        "We understand the importance of work-life balance. We offer various scheduling options including full-time, part-time, weekend, and live-in positions. Our goal is to accommodate both your needs and our clients' requirements.",
-    },
-    {
-      question: "What opportunities for career growth are available?",
-      answer:
-        "CareBridge provides clear pathways for advancement. From senior caregiver positions to care coordination roles, we support your professional growth. Many of our team leaders started as caregivers and advanced within the organization.",
-    },
-    {
-      question: "What benefits do you offer?",
-      answer:
-        "We provide competitive compensation, comprehensive health insurance, paid time off, and retirement plans. Additionally, we offer ongoing education support and wellness programs to ensure your overall well-being.",
-    },
-    {
-      question: "How do you support work-life balance?",
-      answer:
-        "We believe in supporting our team members both inside and outside of work. This includes flexible scheduling, family support resources, and creating a positive work environment where you can thrive both personally and professionally.",
-    },
-  ];
 
   return (
     <section className="bg-white py-10">
@@ -59,7 +27,7 @@ export default function CareerFAQ() {
 
         {/* FAQ Items */}
         <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
+          {careerFAQs.map((faq, index) => (
             <div
               key={index}
               className="border border-gray-200 rounded-xl overflow-hidden"

@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
 
 interface ButtonProps {
@@ -8,6 +9,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   showIcon?: boolean;
+  path?: string;
 }
 
 export default function Button({
@@ -16,7 +18,18 @@ export default function Button({
   className = "",
   onClick,
   showIcon = true,
+  path,
 }: ButtonProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (path) {
+      router.push(path);
+    }
+    if (onClick) {
+      onClick();
+    }
+  };
   const baseClasses =
     "inline-flex items-center font-medium text-[.95rem] cursor-pointer border-none transition-all duration-300 rounded-[50px] p-1.5 pl-6";
 
@@ -45,7 +58,7 @@ export default function Button({
   return (
     <button
       className={`${baseClasses} ${variantClasses} ${className}`}
-      onClick={onClick}
+      onClick={handleClick}
     >
       <span>{children}</span>
       {showIcon &&

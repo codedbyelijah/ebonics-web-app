@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Button from "./button";
+import { navLinks } from "@/libs";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -54,14 +55,6 @@ export default function Navbar() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isMobileMenuOpen]);
-
-  const navLinks = [
-    { name: "Services", href: "/services" },
-    { name: "About Us", href: "/about-us" },
-    { name: "Blog", href: "/" },
-    { name: "Career", href: "/career" },
-    { name: "Contact", href: "/contact" },
-  ];
 
   return (
     <header

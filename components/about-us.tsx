@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Button from "./button";
 
@@ -46,7 +47,7 @@ export default function AboutUs() {
 
         {/* Right content */}
         <div className="lg:col-span-6 pr-5 ">
-          <span className="tag pb-2">About Us</span>
+          <span className="tag mb-3">About Us</span>
           <h2 className="text-3xl text-left md:text-5xl font-fredoka md:leading-13 mb-4  ">
             Every care plan is designed with compassion and reliability,
             ensuring seniors receive support.
@@ -59,7 +60,9 @@ export default function AboutUs() {
           </p>
 
           {/* btn */}
-          <Button variant="brand">Learn More</Button>
+          <Button variant="brand" path="/about-us">
+            Learn More
+          </Button>
         </div>
       </div>
     </section>

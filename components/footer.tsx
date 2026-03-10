@@ -1,82 +1,15 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/no-unescaped-entities */
 
-import React from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Button from "./button";
 import Link from "next/link";
+import { footerLinks, contactInfo } from "@/libs";
 
 export default function Footer() {
-  const footerLink = [
-    {
-      header: "Quick Links",
-      links: [
-        {
-          title: "Our Services",
-          href: "/services",
-        },
-        {
-          title: "About Us",
-          href: "/about-us",
-        },
-        {
-          title: "FAQ",
-          href: "/services#faq",
-        },
-        {
-          title: "Blog",
-          href: "/",
-        },
-      ],
-    },
-    {
-      header: "Service",
-      links: [
-        {
-          title: "In-Home Care",
-          href: "/service",
-        },
-        {
-          title: "Personal Care",
-          href: "/service",
-        },
-        {
-          title: "Medication Support",
-          href: "/service",
-        },
-        {
-          title: "Companionship",
-          href: "/service",
-        },
-        {
-          title: "Mobility Support",
-          href: "/service",
-        },
-        {
-          title: "Respite Care",
-          href: "/service",
-        },
-      ],
-    },
-  ];
-
-  const contact = [
-    {
-      title: "Contact",
-      content: "(+234) 9039746329",
-    },
-    {
-      title: "Email",
-      content: "ebonicshomecareservices98@gmail.com",
-    },
-    {
-      title: "Location",
-      content: "M5 HADEJA STREET/IBRAHIM TAIWO RD KADUNA, KADUNA STATE",
-    },
-  ];
-
   const socials = [<Facebook />, <Instagram />, <Twitter />, <Linkedin />];
+
   return (
     <>
       <footer className="bg-white  rounded-xl">
@@ -109,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {footerLink.map((link) => (
+            {footerLinks.map((link) => (
               <div className="flex flex-col justify-start " key={link.header}>
                 <h4 className="text-2xl mb-3 font-medium font-fredoka  ">
                   {link.header}
@@ -134,7 +67,7 @@ export default function Footer() {
                 Contact
               </h4>
               <ul className="flex flex-col gap-3">
-                {contact.map((item) => (
+                {contactInfo.map((item) => (
                   <li key={item.title}>
                     <span className="font-semibold">{item.title}: </span>
                     <Link href="#" className="text-text-light text-[.95rem]">

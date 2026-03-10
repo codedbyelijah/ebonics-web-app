@@ -21,8 +21,12 @@ export default function About() {
               families can trust.
             </p>
             <div className=" flex  items-center gap-3 flex-wrap justify-self-end ">
-              <Button variant="navbar">Free Consultation</Button>
-              <Button variant="brand">Join Our Team</Button>
+              <Button variant="navbar" path="/contact">
+                Free Consultation
+              </Button>
+              <Button variant="brand" path="/contact">
+                Join Our Team
+              </Button>
             </div>
           </div>
           {/* grid 2 */}

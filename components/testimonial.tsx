@@ -1,25 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { testimonialContent } from "@/libs";
 
-/* eslint-disable react/no-unescaped-entities */
 export default function Testimonial() {
-  const testContent = [
-    {
-      content:
-        "The caregivers have been an absolute blessing to our family. They handle every situation with grace, patience, and true professionalism. Highly recommended for better care.",
-      name: "Morgan Kaplan",
-    },
-    {
-      content:
-        "Moving to home care was a big step, but Ebonics made the transition seamless. We have peace of mind knowing our father is safe an happy in his own environment.",
-      name: "Richard Roe",
-    },
-    {
-      content:
-        "The care felt personal, not rushed. Our caregiver treated my mother with real kindness and respect. It's rare to find an agency that genuinely cares this much.",
-      name: "Diane Lawson",
-    },
-  ];
   return (
     <section className="pb-10">
       <div className="container-wrapper">
@@ -31,7 +15,7 @@ export default function Testimonial() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
-          {testContent.map((item, i) => (
+          {testimonialContent.map((item, i) => (
             <div
               className="bg-white p-8 rounded-md border border-border-color flex flex-col justify-between items-start "
               key={i}
