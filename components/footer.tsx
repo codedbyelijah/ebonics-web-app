@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-key */
-/* eslint-disable react/no-unescaped-entities */
 
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
@@ -32,7 +31,9 @@ export default function Footer() {
               <h2 className="text-lg lg:text-xl">
                 Schedule Care for Your Family Now
               </h2>
-              <Button variant="brand">Let's Connect</Button>
+              <Button variant="brand" whatsapp>
+                Let&apos;s Connect
+              </Button>
               <div className="flex justify-start items-center space-x-2">
                 {socials.map((social, i) => (
                   <Link key={i} href="#">

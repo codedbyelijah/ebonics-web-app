@@ -1,12 +1,15 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useState } from "react";
 import Button from "@/components/button";
-import { servicesFAQs } from "@/libs";
+import { servicesFAQs, whatsappMsg } from "@/libs";
+import { useWhatsapp } from "@/hooks/useWhatsapp";
+import { ChevronDown } from "lucide-react";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const { openWhatsApp } = useWhatsapp();
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -50,19 +53,7 @@ export default function FAQSection() {
                       : "bg-[#eacfb9]"
                   }`}
                 >
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  <ChevronDown className="w-5 h-5 text-white" />
                 </div>
               </button>
 
@@ -81,11 +72,18 @@ export default function FAQSection() {
         {/* CTA */}
         <div className="text-center mt-16">
           <p className="text-[#5a5a5a] mb-6">
-            Still have questions? We're here to help.
+            Still have questions? We&apos;re here to help.
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <Button variant="hero">Contact Us</Button>
-            <Button variant="brand">Schedule Consultation</Button>
+            <Button variant="hero" path="/contact">
+              Contact Us
+            </Button>
+            <Button
+              variant="brand"
+              onClick={() => openWhatsApp(whatsappMsg.client)}
+            >
+              Schedule Consultation
+            </Button>
           </div>
         </div>
       </div>

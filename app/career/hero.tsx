@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Button from "@/components/button";
 
 export default function Hero() {
@@ -19,14 +18,18 @@ export default function Hero() {
           </h1>
 
           <p className="text-white w-full text-lg lg:w-2xl text-center ">
-            Make a meaningful difference in people's lives every day. Build a
-            rewarding career with us as a professional caregiver, where your
+            Make a meaningful difference in people&apos;s lives every day. Build
+            a rewarding career with us as a professional caregiver, where your
             compassion and skills create lasting impact in our community.
           </p>
 
           <div className=" flex justify-center  items-center gap-3 flex-wrap ">
-            <Button variant="brand">Apply Now</Button>
-            <Button variant="navbar">View Open Positions</Button>
+            <Button variant="brand" whatsapp>
+              Apply Now
+            </Button>
+            <Button variant="navbar" whatsapp>
+              View Open Positions
+            </Button>
           </div>
         </div>
       </div>

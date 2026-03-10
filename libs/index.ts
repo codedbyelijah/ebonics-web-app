@@ -65,23 +65,6 @@ export const footerLinks = [
       },
     ],
   },
-  {
-    header: "Contact",
-    links: [
-      {
-        title: "Contact Us",
-        href: "/contact",
-      },
-      {
-        title: "Book a Visit",
-        href: "/contact",
-      },
-      {
-        title: "Emergency Care",
-        href: "/contact",
-      },
-    ],
-  },
 ];
 
 // Testimonial Contents
@@ -135,7 +118,6 @@ export const servicesHeroSlides = [
       "Our comprehensive care services are designed to meet your unique needs with compassion and professionalism.",
     image: "/img/ebonics-caregiver-2.jpg",
     primaryButton: "Get Started",
-    path: "/contact",
   },
   {
     id: 2,
@@ -145,7 +127,6 @@ export const servicesHeroSlides = [
       "We provide continuous care and support to ensure your loved ones are never alone and always safe.",
     image: "/img/ebonics-caregiver-3.jpg",
     primaryButton: "Schedule Care",
-    path: "/contact",
   },
   {
     id: 3,
@@ -155,7 +136,6 @@ export const servicesHeroSlides = [
       "Our caregivers provide not just assistance, but friendship and emotional support to enhance quality of life.",
     image: "/img/ebonics-caregiver-4.jpg",
     primaryButton: "Contact Us",
-    path: "/contact",
   },
   {
     id: 4,
@@ -165,7 +145,6 @@ export const servicesHeroSlides = [
       "From dementia care to post-surgery recovery, we offer specialized services for every situation.",
     image: "/img/ebonics-caregiver-5.jpg",
     primaryButton: "Custom Plan",
-    path: "/contact",
   },
 ];
 
@@ -190,7 +169,7 @@ export const servicesList = [
     title: "Medication Support & Management",
     description:
       "Experienced caregivers ensure proper medication administration, timing, and monitoring to maintain health and prevent complications.",
-    images: ["/img/ebonics-caregiver-10.jpg", "/img/ebonics-caregiver-11.jpg"],
+    images: ["/img/ebonics-caregiver-10.jpg", "/img/ebonics-caregiver-14.jpg"],
   },
   {
     id: 4,
@@ -320,6 +299,68 @@ export const contactInfo = [
   },
 ];
 
+export const whyChooseUs = [
+  {
+    number: "01",
+    title: "Police Verification",
+    description: "Verify that our Caregivers do not have any criminal record",
+  },
+  {
+    number: "02",
+    title: "Medical Checks",
+    description:
+      "Confirm that our Caregivers are medically fit to perform their duties effectively",
+  },
+  {
+    number: "03",
+    title: "Address Verification",
+    description:
+      "Conduct physical verification of our Caregiver's home address",
+  },
+  {
+    number: "04",
+    title: "Third Party Verification",
+    description:
+      "Run necessary background checks on each guarantor provided by our Caregivers",
+  },
+  {
+    number: "05",
+    title: "Compassionate, Client-Centered Care",
+    description:
+      "We're all about more than just providing care—we're dedicated to building real relationships. Our caregivers are selected not just for their expertise but also for their heartfelt compassion and commitment to making a difference in the lives of others.",
+  },
+  {
+    number: "06",
+    title: "Highly Qualified and Trained Caregivers",
+    description:
+      "Our team is made up of seasoned professionals who go through extensive training and ongoing education. From certified nursing assistants to specialists in dementia care, our caregivers have the skills and knowledge to meet a wide variety of needs.",
+  },
+  {
+    number: "07",
+    title: "Customized Care Plans",
+    description:
+      "We understand that everyone is different, and so are their care needs. That's why we create personalized care plans tailored to your specific situation—whether you need occasional companionship, 24/7 assistance, or specialized care for a chronic condition.",
+  },
+  {
+    number: "08",
+    title: "A Family-Centered Approach",
+    description:
+      "To us, caregiving is a collaborative effort. We partner closely with families to keep them informed and involved, boosting their confidence in the care their loved ones receive. Our clear communication and regular updates ensure everyone is aligned, building trust and fostering teamwork.",
+  },
+  {
+    number: "09",
+    title: "A Track Record of Excellence",
+    description:
+      "Our track record truly speaks for itself. We've earned the trust of countless satisfied clients and families, creating a legacy built on reliability and exceptional care.",
+  },
+  {
+    number: "10",
+    title: "Peace of Mind for Families",
+    description:
+      "Taking care of a loved one can feel like a lot to handle, but you don't have to face it by yourself. At Bliss Caregivers, we offer dependable, professional support that helps families find the peace of mind they truly deserve.",
+  },
+];
+
 // Navigation Links Configuration
 export const navigationLinks = [
   { name: "Services", href: "/services" },
@@ -328,3 +369,9 @@ export const navigationLinks = [
   { name: "Career", href: "/career" },
   { name: "Contact", href: "/contact" },
 ];
+
+// Whatsapp Message
+export const whatsappMsg = {
+  client: "Hello, I am interested in your homecare services.",
+  caregiver: "Hello, I want to apply as a caregiver.",
+};

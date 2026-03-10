@@ -28,8 +28,12 @@ export default function Hero() {
           </p>
 
           <div className=" flex justify-center  items-center gap-3 flex-wrap ">
-            <Button variant="brand">Get In Touch</Button>
-            <Button variant="navbar">Book A Visit</Button>
+            <Button variant="brand" whatsapp>
+              Get In Touch
+            </Button>
+            <Button variant="navbar" whatsapp>
+              Book A Visit
+            </Button>
           </div>
         </div>
       </div>

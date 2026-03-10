@@ -63,7 +63,7 @@ export default function Hero() {
               </p>
 
               <div className="flex justify-center items-center gap-3 flex-wrap">
-                <Button variant="navbar" path={slide.path}>
+                <Button variant="navbar" whatsapp>
                   {slide.primaryButton}
                 </Button>
               </div>

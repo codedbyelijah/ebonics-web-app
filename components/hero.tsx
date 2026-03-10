@@ -18,7 +18,9 @@ export default function Hero() {
               what matters.
             </p>
             {/* Button */}
-            <Button variant="brand">Free Consultation</Button>
+            <Button variant="brand" whatsapp>
+              Free Consultation
+            </Button>
           </div>
 
           {/* hero card */}

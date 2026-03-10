@@ -22,7 +22,7 @@ export default function Hero() {
           </p>
 
           <div className=" flex justify-center  items-center gap-3 flex-wrap ">
-            <Button variant="navbar" path="/contact">
+            <Button variant="navbar" whatsapp>
               Free Consultation
             </Button>
             <Button variant="brand" path="/career">

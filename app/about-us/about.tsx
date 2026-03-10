@@ -21,10 +21,10 @@ export default function About() {
               families can trust.
             </p>
             <div className=" flex  items-center gap-3 flex-wrap justify-self-end ">
-              <Button variant="navbar" path="/contact">
+              <Button variant="navbar" whatsapp>
                 Free Consultation
               </Button>
-              <Button variant="brand" path="/contact">
+              <Button variant="brand" path="/career">
                 Join Our Team
               </Button>
             </div>

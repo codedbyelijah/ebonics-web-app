@@ -1,4 +1,4 @@
-import { ChevronRight, Clock } from "lucide-react";
+import { Car, ChevronRight, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ export default function Service() {
 
               <div className="mt-5 md:mt-6">
                 <Link
-                  href="/service"
+                  href="/services"
                   className="flex items-center justify-start space-x-1"
                 >
                   Learn
@@ -66,7 +66,7 @@ export default function Service() {
               </div>
               <div className="mt-5 md:mt-6">
                 <Link
-                  href="/service"
+                  href="/services"
                   className="flex items-center justify-start space-x-1"
                 >
                   Learn
@@ -90,7 +90,7 @@ export default function Service() {
             <div className="flex flex-1 flex-col justify-center p-6 md:p-8 ">
               <div>
                 <div className="rb-5 mb-5 md:mb-6">
-                  <Clock size={22} />
+                  <Clock size={30} />
                 </div>
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
                   Round-the-clock care in your home
@@ -102,7 +102,7 @@ export default function Service() {
               </div>
               <div className="mt-5 md:mt-6">
                 <Link
-                  href="/service"
+                  href="/services"
                   className="flex items-center justify-start space-x-1"
                 >
                   Learn
@@ -116,19 +116,20 @@ export default function Service() {
             <div className="flex flex-1 flex-col justify-center p-6 md:p-8 ">
               <div>
                 <div className="rb-5 mb-5 md:mb-6">
-                  <Clock size={22} />
+                  <Car size={30} />
                 </div>
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
-                  Round-the-clock care in your home
+                  Mobility Support & Safety
                 </h2>
                 <p className="text-lg">
-                  Full-time caregivers who live with clients for continuous,
-                  seamless support
+                  Specialized assistance with walking, transfers, fall
+                  prevention, and home safety modifications to ensure secure
+                  movement.
                 </p>
               </div>
               <div className="mt-5 md:mt-6">
                 <Link
-                  href="/service"
+                  href="/services"
                   className="flex items-center justify-start space-x-1"
                 >
                   Learn

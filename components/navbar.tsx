@@ -1,5 +1,5 @@
 "use client";
-/* eslint-disable react/no-unescaped-entities */
+
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -104,7 +104,9 @@ export default function Navbar() {
             </div>
 
             {/* Button */}
-            <Button variant="navbar">Let's Connect</Button>
+            <Button variant="navbar" whatsapp>
+              Let&apos;s Connect
+            </Button>
           </div>
         </div>
 
@@ -146,8 +148,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Button */}
-                <Button variant="navbar" className="w-[90%] justify-center">
-                  Let's Connect
+                <Button
+                  variant="navbar"
+                  className="w-[90%] justify-center"
+                  whatsapp
+                >
+                  Let&apos;s Connect
                 </Button>
               </div>
             </div>

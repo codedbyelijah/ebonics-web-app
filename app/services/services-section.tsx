@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { servicesList } from "@/libs";
 
@@ -9,31 +7,12 @@ export default function ServicesSection() {
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         {/* Services Header */}
         <div className="w-full lg:w-[35%] lg:sticky lg:top-25 h-fit">
-          <span className="tag">Services</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            {servicesList.length} Services Available
+          <span className="tag mb-3 ">Our Services</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Premium Care <br /> Designed for Everyday Needs
           </h2>
 
-          <p className="text-gray-600 mb-8">
-            We provide comprehensive home care services tailored to meet your
-            unique needs and ensure your loved ones receive the best possible
-            care.
-          </p>
-
           {/* Service Cards */}
-          <div className="space-y-4">
-            {servicesList.map((service, index) => (
-              <div
-                key={service.id}
-                className="p-4 rounded-lg border border-gray-200 cursor-pointer transition-all hover:border-[#3e2632] hover:shadow-md"
-              >
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  {index + 1}. {service.title}
-                </h3>
-                <p className="text-sm text-gray-600">{service.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Services List */}

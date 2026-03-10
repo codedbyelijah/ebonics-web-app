@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
+import { whatsappMsg } from "@/libs";
+import { useWhatsapp } from "@/hooks/useWhatsapp";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -10,6 +12,7 @@ interface ButtonProps {
   onClick?: () => void;
   showIcon?: boolean;
   path?: string;
+  whatsapp?: boolean;
 }
 
 export default function Button({
@@ -19,8 +22,11 @@ export default function Button({
   onClick,
   showIcon = true,
   path,
+  whatsapp,
 }: ButtonProps) {
   const router = useRouter();
+
+  const { openWhatsApp } = useWhatsapp();
 
   const handleClick = () => {
     if (path) {
@@ -28,6 +34,9 @@ export default function Button({
     }
     if (onClick) {
       onClick();
+    }
+    if (whatsapp) {
+      openWhatsApp(whatsappMsg.client);
     }
   };
   const baseClasses =

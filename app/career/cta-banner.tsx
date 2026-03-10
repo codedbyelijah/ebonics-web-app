@@ -16,8 +16,12 @@ export default function CareerCTABanner() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="navbar">Join Our Team</Button>
-            <Button variant="brand">Learn More About Careers</Button>
+            <Button variant="navbar" whatsapp>
+              Join Our Team
+            </Button>
+            <Button variant="brand" whatsapp>
+              Learn More About Careers
+            </Button>
           </div>
 
           <p className="text-white/70 text-sm mt-8">

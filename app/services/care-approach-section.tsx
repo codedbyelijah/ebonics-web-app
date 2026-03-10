@@ -1,11 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Image from "next/image";
 import Button from "@/components/button";
 import { ArrowRight } from "lucide-react";
+import { useWhatsapp } from "@/hooks/useWhatsapp";
+import { whatsappMsg } from "@/libs";
+import Link from "next/link";
 
 export default function CareApproachSection() {
+  const { openWhatsApp } = useWhatsapp();
   return (
     <section className="py-15">
       <div className=" container-wrapper grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
@@ -64,20 +67,28 @@ export default function CareApproachSection() {
               </h3>
 
               <p className="mt-2 text-sm text-[#5a5a5a]">
-                Every family's situation is different, and we build care plans
-                that match your needs.
+                Every family&apos;s situation is different, and we build care
+                plans that match your needs.
               </p>
             </div>
           </div>
 
           {/* CTA */}
           <div className="mt-10 flex items-center gap-4">
-            <Button variant="brand">Explore</Button>
+            <Button
+              variant="brand"
+              onClick={() => openWhatsApp(whatsappMsg.client)}
+            >
+              Get Started
+            </Button>
 
-            <button className="flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors duration-300 cursor-pointer ">
+            <Link
+              href="#"
+              className="flex items-center gap-2 text-sm font-medium text-primary hover:text-secondary transition-colors duration-300 cursor-pointer "
+            >
               Learn More
               <ArrowRight className="h-4 w-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

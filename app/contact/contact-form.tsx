@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -37,8 +36,8 @@ export default function ContactForm() {
           </h2>
 
           <p className="text-gray-600 mb-8">
-            Have questions about our care services? We're here to help and will
-            respond as soon as possible.
+            Have questions about our care services? We&apos;re here to help and
+            will respond as soon as possible.
           </p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Star } from "lucide-react";
 import Image from "next/image";
 import { testimonialContent } from "@/libs";
@@ -21,7 +20,7 @@ export default function Testimonial() {
               key={i}
             >
               <p className="text-text-light text-[1rem] mb-8 text-lg">
-                "{item.content}"
+                &quot;{item.content}&quot;
               </p>
               <div className="flex items-center gap-3">
                 <Image
