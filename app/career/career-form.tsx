@@ -107,7 +107,9 @@ export default function CareerForm() {
             <div>
               <h4 className="font-semibold mb-1">Email</h4>
               <p className="text-gray-600 text-sm">Reach out with questions</p>
-              <p className="text-sm text-gray-800">careers@carebridge.com</p>
+              <p className="text-sm text-gray-800">
+                ebonicshomecareservices98@gmail.com
+              </p>
             </div>
           </div>
 
@@ -119,7 +121,7 @@ export default function CareerForm() {
               <p className="text-gray-600 text-sm">
                 Call us during business hours
               </p>
-              <p className="text-sm text-gray-800">+1 (800) 555-0147</p>
+              <p className="text-sm text-gray-800">(+234) 9039746329</p>
             </div>
           </div>
 

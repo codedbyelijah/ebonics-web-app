@@ -14,7 +14,7 @@ export default function Footer() {
       links: [
         {
           title: "Our Services",
-          href: "/service",
+          href: "/services",
         },
         {
           title: "About Us",
@@ -22,7 +22,7 @@ export default function Footer() {
         },
         {
           title: "FAQ",
-          href: "/about-us#faq",
+          href: "/services#faq",
         },
         {
           title: "Blog",
