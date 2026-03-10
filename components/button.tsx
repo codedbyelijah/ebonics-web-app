@@ -26,7 +26,7 @@ export default function Button({
       : variant === "navbar"
         ? "text-text-main bg-white hover:bg-[#2a1921] hover:text-white group"
         : variant === "brand"
-          ? "text-white bg-[var(--brand-dark)] hover:bg-[#2a1921] group"
+          ? "text-white bg-[var(--brand-dark)] hover:bg-white hover:text-[#3e2632] group"
           : variant === "primary"
             ? "bg-primary text-white hover:bg-opacity-90"
             : variant === "secondary"
