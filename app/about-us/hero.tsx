@@ -1,12 +1,18 @@
 import Button from "@/components/button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <main className="relative h-auto lg:h-[calc(100dvh-350px)] mt-22 lg:mt-0 ">
-      <div
-        className="absolute inset-0 bg-cover bg-top -z-20 "
-        style={{ backgroundImage: "url('/img/ebonics.png')" }}
-      />
+      <div className="absolute inset-0 -z-20">
+        <Image
+          src="/img/ebonics.png"
+          alt="Hero"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+      </div>
       <div className="absolute inset-0 bg-black/70 -z-10" />
 
       <div className="relative container-wrapper h-full flex flex-col justify-center items-center ">

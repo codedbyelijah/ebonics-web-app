@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Button from "@/components/button";
 import { servicesHeroSlides } from "@/libs";
+import Image from "next/image";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,12 +26,19 @@ export default function Hero() {
       <div className="absolute inset-0 -z-20">
         {servicesHeroSlides.map((slide, index) => (
           <div
-            key={slide.id}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
-            style={{ backgroundImage: `url('${slide.image}')` }}
-          />
+          >
+            <Image
+              src={slide.image}
+              alt="Hero"
+              fill
+              priority
+              className="object-cover object-center"
+            />
+          </div>
         ))}
       </div>
 

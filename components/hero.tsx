@@ -61,6 +61,7 @@ export default function Hero() {
                 width={200}
                 height={200}
                 className="h-full rounded-sm object-fill flex-1"
+                priority
               />
               <span
                 className="text-text-light text-[1rem] font-oswald"
@@ -105,6 +106,7 @@ export default function Hero() {
             width={500}
             height={500}
             className="w-full h-full object-cover lg:object-bottom"
+            priority
           />
         </motion.div>
       </div>
