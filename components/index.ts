@@ -6,3 +6,5 @@ export { default as Process } from "./process";
 export { default as Testimonial } from "./testimonial";
 export { default as CTABanner } from "./cta";
 export { default as Footer } from "./footer";
+export { default as ChatWidget } from "./chat-widget";
+export { default as StructuredData } from "./structuredData";
