@@ -31,7 +31,7 @@ export default function Testimonial() {
                   className="w-10 h-10  rounded-[50%] "
                 />
                 <div>
-                  <h4 className="font-semibold  mb-0.5 font-[.9rem]">
+                  <h4 className="font-semibold text-gray-900 mb-0.5 font-[.9rem]">
                     {item.name}
                   </h4>
                   <div className=" flex items-center justify-start space-x-1">

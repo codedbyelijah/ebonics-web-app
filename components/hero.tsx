@@ -17,7 +17,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-6xl"
+              className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight"
             >
               Care at Home, <br /> Done Right
             </motion.h2>
@@ -83,11 +83,11 @@ export default function Hero() {
               className="bg-white p-6 rounded-md shadow-sm flex-1"
             >
               <QuoteIcon className="text-secondary mb-2" size={22} />
-              <p className="text-lg">
+              <p className="text-lg text-gray-700">
                 The care felt personal, not rushed. Our caregiver treated my
                 father with real kindness and respect.
               </p>
-              <span className="">— Diane Lawson</span>
+              <span className="text-gray-600 font-medium">— Diane Lawson</span>
             </motion.div>
           </div>
         </div>

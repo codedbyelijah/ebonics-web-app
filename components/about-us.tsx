@@ -47,7 +47,7 @@ export default function AboutUs() {
         {/* Right content */}
         <div className="lg:col-span-6 pr-5 ">
           <span className="tag mb-3">About Us</span>
-          <h2 className="text-3xl text-left md:text-5xl font-fredoka md:leading-13 mb-4  ">
+          <h2 className="text-3xl text-left md:text-5xl font-fredoka md:leading-13 mb-4 text-gray-900 ">
             Every care plan is designed with compassion and reliability,
             ensuring seniors receive support.
           </h2>

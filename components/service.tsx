@@ -20,11 +20,13 @@ export default function Service() {
           <div className="row-span-2 flex flex-col sm:col-span-2 sm:grid-cols-2 lg:col-span-1 bg-white/20 backdrop-blur-md shadow-sm rounded-lg overflow-hidden ">
             <div className="block p-6  sm:flex sm:flex-col sm:justify-center md:p-8">
               <div className="">
-                <p className="mb-2 font-semibold text-lg">Elderly</p>
+                <p className="mb-2 font-semibold text-lg text-gray-900">
+                  Elderly
+                </p>
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
                   Elderly care with dignity and respect
                 </h2>
-                <p className="text-lg">
+                <p className="text-lg text-gray-700">
                   Daily assistance, medication management, and companionship for
                   aging parents
                 </p>
@@ -33,7 +35,7 @@ export default function Service() {
               <div className="mt-5 md:mt-6">
                 <Link
                   href="/services"
-                  className="flex items-center justify-start space-x-1"
+                  className="flex items-center justify-start space-x-1 text-primary hover:text-primary/80 transition-colors"
                 >
                   Learn
                   <ChevronRight />
@@ -55,11 +57,13 @@ export default function Service() {
           <div className="grid auto-cols-fr grid-cols-1 sm:col-span-2 sm:grid-cols-2 bg-white/20 backdrop-blur-md shadow-sm rounded-lg overflow-hidden ">
             <div className="block p-6 first-of-type:flex-1 sm:flex sm:flex-col sm:justify-center md:p-8  ">
               <div className="">
-                <p className="mb-2 font-semibold text-lg">Recovery</p>
+                <p className="mb-2 font-semibold text-lg text-gray-900">
+                  Recovery
+                </p>
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
                   Post-surgery care when you need it most
                 </h2>
-                <p className="text-lg">
+                <p className="text-lg text-gray-700">
                   Skilled support during healing, from wound care to mobility
                   assistance
                 </p>
@@ -67,7 +71,7 @@ export default function Service() {
               <div className="mt-5 md:mt-6">
                 <Link
                   href="/services"
-                  className="flex items-center justify-start space-x-1"
+                  className="flex items-center justify-start space-x-1 text-primary hover:text-primary/80 transition-colors"
                 >
                   Learn
                   <ChevronRight />
@@ -95,7 +99,7 @@ export default function Service() {
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
                   Round-the-clock care in your home
                 </h2>
-                <p className="text-lg">
+                <p className="text-lg text-gray-700">
                   Full-time caregivers who live with clients for continuous,
                   seamless support
                 </p>
@@ -103,7 +107,7 @@ export default function Service() {
               <div className="mt-5 md:mt-6">
                 <Link
                   href="/services"
-                  className="flex items-center justify-start space-x-1"
+                  className="flex items-center justify-start space-x-1 text-primary hover:text-primary/80 transition-colors"
                 >
                   Learn
                   <ChevronRight />
@@ -121,7 +125,7 @@ export default function Service() {
                 <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
                   Mobility Support & Safety
                 </h2>
-                <p className="text-lg">
+                <p className="text-lg text-gray-700">
                   Specialized assistance with walking, transfers, fall
                   prevention, and home safety modifications to ensure secure
                   movement.
@@ -130,7 +134,7 @@ export default function Service() {
               <div className="mt-5 md:mt-6">
                 <Link
                   href="/services"
-                  className="flex items-center justify-start space-x-1"
+                  className="flex items-center justify-start space-x-1 text-primary hover:text-primary/80 transition-colors"
                 >
                   Learn
                   <ChevronRight />

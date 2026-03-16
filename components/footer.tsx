@@ -25,10 +25,10 @@ export default function Footer() {
                 />
               </div>
 
-              <h2 className=" text-xl lg:text-2xl  font-medium font-fredoka ">
+              <h2 className="text-xl lg:text-2xl text-gray-900 font-medium font-fredoka ">
                 EBONICS HOMECARE SERVICES LTD{" "}
               </h2>
-              <h2 className="text-lg lg:text-xl">
+              <h2 className="text-lg lg:text-xl text-gray-700">
                 Schedule Care for Your Family Now
               </h2>
               <Button variant="brand" whatsapp>
@@ -45,7 +45,7 @@ export default function Footer() {
 
             {footerLinks.map((link) => (
               <div className="flex flex-col justify-start " key={link.header}>
-                <h4 className="text-2xl mb-3 font-medium font-fredoka  ">
+                <h4 className="text-2xl mb-3 font-medium font-fredoka text-gray-900 ">
                   {link.header}
                 </h4>
                 <ul className="flex flex-col gap-3 ">
@@ -64,13 +64,15 @@ export default function Footer() {
             ))}
 
             <div className="">
-              <h4 className="text-2xl mb-3 font-medium font-fredoka ">
+              <h4 className="text-2xl mb-3 font-medium font-fredoka text-gray-900 ">
                 Contact
               </h4>
               <ul className="flex flex-col gap-3">
                 {contactInfo.map((item) => (
                   <li key={item.title}>
-                    <span className="font-semibold">{item.title}: </span>
+                    <span className="font-semibold text-gray-900">
+                      {item.title}:{" "}
+                    </span>
                     <Link href="#" className="text-text-light text-[.95rem]">
                       {item.content}
                     </Link>
